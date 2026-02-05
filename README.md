@@ -2,16 +2,22 @@
 
 A simple React app to generate random sequences of emojis.
 
-## Building from Source
+### Option 1: Building from Source
 
 ```shell
 git clone https://github.com/ShinraiYeen/EmojiGen.git
 cd EmojiGen
 npm install
+
+# Run development server
+npm run dev
 ```
 
-## Running the development server
+### Option 2: Build/Run Docker image
+
+Note that the `Dockerfile` builds and serves a production version of the app.
 
 ```shell
-npm run dev
+docker build -t emojigen docker/
+docker run -p 3000:3000 emojigen
 ```
