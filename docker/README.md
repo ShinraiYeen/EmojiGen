@@ -2,7 +2,7 @@
 
 ## Build Dockerfile
 ```shell
-docker build -t emojigen .
+docker build -t emojigen -f docker/Dockerfile .
 ```
 
 ## Running the image

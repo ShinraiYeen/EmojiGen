@@ -4,9 +4,7 @@ WORKDIR /app
 
 RUN apk update
 RUN apk add git
-RUN git clone https://github.com/ShinraiYeen/EmojiGen.git
-
-WORKDIR /app/EmojiGen
+COPY . .
 
 RUN npm install
 RUN npm i -g serve

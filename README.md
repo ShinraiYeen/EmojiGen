@@ -18,6 +18,6 @@ npm run dev
 Note that the `Dockerfile` builds and serves a production version of the app.
 
 ```shell
-docker build -t emojigen docker/
+docker build -t emojigen -f docker/Dockerfile .
 docker run -p 3000:3000 emojigen
 ```
