@@ -19,7 +19,7 @@ function App() {
     <>
       <div className="card">
         <div className="input-group">
-          <NumberInput placeholder="Number" value={value} onValueChange={setInputValue} />
+          <NumberInput placeholder="Number" value={value} onValueChange={setInputValue} maximum={1000} />
           <Button onTrigger={handleButtonClick} className="button-generate" />
         </div>
         <div className="category-group">
