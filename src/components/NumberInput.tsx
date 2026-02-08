@@ -20,6 +20,7 @@ export const NumberInput = (props: Props) => {
             onChange={handleChange}
             placeholder={props.placeholder}
             inputMode="numeric"
+            className="number-input"
         />
     );
 }

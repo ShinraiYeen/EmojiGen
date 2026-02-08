@@ -1,10 +1,11 @@
-interface ButtonProps {
+interface Props {
     onTrigger: () => void;
+    className: string;
 }
 
-export function Button({ onTrigger }: ButtonProps) {
+export function Button(props: Props) {
     return (
-        <button onClick={onTrigger}>
+        <button onClick={props.onTrigger} className={props.className}>
             Generate
         </button>
     );

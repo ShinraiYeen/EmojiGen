@@ -18,11 +18,17 @@ function App() {
   return (
     <>
       <div className="card">
-        <NumberInput placeholder="Number" value={value} onValueChange={setInputValue} />
-        <Button onTrigger={handleButtonClick} />
-        <CategoryList onChange={(categories) => { setSelectedCategories(categories); }} options={emojiCategories} />
-        <p className="emoji-display">{emojiString}</p>
-      </div>
+        <div className="input-group">
+          <NumberInput placeholder="Number" value={value} onValueChange={setInputValue} />
+          <Button onTrigger={handleButtonClick} className="button-generate" />
+        </div>
+        <div className="category-group">
+          <CategoryList onChange={(categories) => { setSelectedCategories(categories); }} options={emojiCategories} />
+        </div>
+        <div className="emoji-group">
+          <p className="emoji-display">{emojiString}</p>
+        </div>
+      </div >
     </>
   )
 }
